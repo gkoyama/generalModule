@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script>
+	var windowWidth = screen.width;
+	var isTouchDevice = function() {
+		return ('ontouchstart' in window || navigator.msPointerEnabled) ? true : false;
+	};
+	if(windowWidthã€€>= 737 && isTouchDevice() == false) {
+		document.write('<meta name="viewport" content="width=device-width, initial-scale=1">');
+	} else if(windowWidthã€€>= 737 && isTouchDevice()){
+		document.write('<meta name="viewport" content="width=980">');
+	}
+	else if(windowWidthã€€< 737) {
+		document.write('<meta name="viewport" content="width=device-width, initial-scale=1">');
+	}
+</script>
