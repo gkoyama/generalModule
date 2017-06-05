@@ -210,6 +210,15 @@ h3::before {
 	// background-color: rgba(85,85,85,0.5);
 }
 
+.accordion-block span {
+	position: absolute;
+	top: 20%;
+	right: 15px;
+	width: 10px;
+	height: 10px;
+	background-color: #FFFFFF;
+}
+
 .accordion-title {
 	cursor: pointer;
 	color: $color-white;
