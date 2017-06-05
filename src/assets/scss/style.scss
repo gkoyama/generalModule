@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import "vars";
+
 html {
 	font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 	font-size: 62.5%;
@@ -29,9 +31,10 @@ body {
 	position: fixed;
 	width: 100%;
 	padding: 8px 15px 8px 15px;
-	color: #FFFFFF;
-	background-color: #555555;
-	min-width: 660px;
+	color: $color-white;
+	background-color: $color-gray;
+	min-width: 415px;
+	// min-width: 660px;
 }
 
 .site-main {
@@ -49,8 +52,6 @@ body {
 
 .section-site-header {
 	position: relative;
-	// display: flex;
-	// justify-content: space-between;
 }
 
 .section-site-header-index {
@@ -75,8 +76,8 @@ body {
 }
 
 .section-site-header-index > li > a:hover {
-	color: #FFD200;
-	border-bottom: 1px solid #FFD200;
+	color: $color-yellow;
+	border-bottom: 1px solid $color-yellow;
 }
 
 h1{
@@ -86,11 +87,11 @@ h1{
 }
 
 h1:hover {
-	color: #FFD200;
+	color: $color-yellow;
 }
 
 .h2 {
-	border-bottom: 1px solid #555555;
+	border-bottom: 1px solid $color-gray;
 }
 
 h2 {
@@ -112,7 +113,7 @@ h3 {
 }
 h3::before {
 	content: '';
-	border-left: 10px solid rgba(255,0,255,1);
+	border-left: 10px solid $color-magenta;
 	margin-right: 5px;
 }
 
@@ -131,13 +132,13 @@ h3::before {
 	display: inline-block;
 	padding: 3px 10px 3px 5px;
 	margin-bottom: 10px;
-	background-color: #555555;
+	background-color: $color-gray;
 }
 
 .module-items-head > * {
 	padding: 0 0 0 5px;
-	border-left: 5px solid rgba(255,210,0,1);
-	color: #FFFFFF;
+	border-left: 5px solid $color-yellow;
+	color: $color-white;
 }
 
 .module-box {
@@ -146,7 +147,7 @@ h3::before {
 
 .module-item {
 	padding: 10px;
-	background-color: rgba(0,0,0,0.1);
+	background-color: $color-black-a01;
 }
 
 .module-item + .module-item {
@@ -165,27 +166,27 @@ h3::before {
 	width: 200px;
 	height: 50px;
 	padding: 5px;
-	background-color: rgba(0,0,0,0.1);
+	background-color: $color-black-a01;
 }
 
 .module-item-code-html {
-	background-color: rgba(255,0,255,0.3);
+	background-color: $color-magenta-a03;
 }
 
 .module-item-code-css {
-	background-color: rgba(0,228,255,0.3);
+	background-color: $color-cyan-a03;
 }
 
 .module-item-code-js {
-	background-color: rgba(204,255,0,0.3);
+	background-color: $color-yellow-green-a03;
 }
 
 .site-footer {
 	margin-top: 50px;
-	color: #FFFFFF;
-	// border-top: 2px solid #FFD200;
-	// border-bottom: 2px solid #FFD200;
-	background-color: #555555;
+	color: $color-white;
+	// border-top: 2px solid $color-yellow;
+	// border-bottom: 2px solid $color-yellow;
+	background-color: $color-gray;
 }
 
 .copyright {
@@ -206,15 +207,15 @@ h3::before {
 
 .accordion-title {
 	cursor: pointer;
-	color: #FFFFFF;
+	color: $color-white;
 	font-size: 1.4rem;
 	font-weight: bold;
 	// border: 1px solid #FFFFFF;
 	transition: color 0.5s,border 0.5s;
 }
 .accordion-title:hover {
-	color: #FFD200;
-	// border: 1px solid #FFD200;
+	color: $color-yellow;
+	// border: 1px solid $color-yellow;
 }
 
 .accordion-menu {
@@ -225,15 +226,16 @@ h3::before {
 .accordion-menu > li {
 	cursor: pointer;
 	padding: 7px 0 7px 0;
-	color: #555555;
+	color: $color-gray;
 	font-size: 1.2rem;
 	font-weight: bold;
-	background-color: rgba(255,210,0,0.6);
+	background-color: $color-yellow-a06;
+	border-top: 1px solid $color-white;
 	transition: color 0.5s,background-color 0.5s;
 }
 .accordion-menu > li:hover {
-	color: #FFFFFF;
-	background-color:  rgba(85,85,85,1);
+	color: $color-white;
+	background-color: $color-gray;
 }
 
 .accordion-menu > li > a {
